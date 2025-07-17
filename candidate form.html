@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Candidate Registration Form</title>
+</head>
+<body>
+  <h2><u>Candidate Registration Form</u></h2>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend style="color:brown">Personal Information</legend>
+      <div class = "form-group>
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required>
+      </div>
+       <div class = "form-group>
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" required>
+       </div>
+       <div class = "form-group>
+      <label for="fathername">Father's Name:</label>
+      <input type="text" id="fathername" name="fathername" required>
+       </div>
+    </fieldset>
+    <fieldset>
+      <legend style="color:brown">Contact Details</legend>
+       <div class = "form-group>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+       </div>
+       <div class = "form-group>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+      </div>
+      <div class = "form-group>
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" cols="30" required></textarea>
+</div>
+</fieldset>
+    <fieldset>
+      <legend style="color:brown">Educational Qualifications</legend>
+       <div class = "form-group>
+      <label for="ssc">SSC (10th Class):</label>
+      <input type="text" id="ssc" name="ssc" required>
+       </div>
+       <div class = "form-group>
+      <label for="inter">Intermediate (12th):</label>
+      <input type="text" id="inter" name="inter" required>
+      </div>
+      
+      <label for="btech">B.Tech:</label>
+      <select id="branch" name="branch" required><br><br>
+        <option value="">-- Select Branch --</option>
+        <option value="cse">CSE</option>
+        <option value="ece">ECE</option>
+        <option value="eee">EEE</option>
+        <option value="mech">Mechanical</option>
+        <option value="civil">Civil</option>
+        <option value="other">Other</option>
+      </select><br><br>
+    </fieldset><br>
+    <fieldset>
+      <legend style="color:brown">Skills</legend>
+      <input type="checkbox" name="skills" value="HTML"> HTML
+      <input type="checkbox" name="skills" value="CSS"> CSS
+      <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+      <input type="checkbox" name="skills" value="Python"> Python
+      <input type="checkbox" name="skills" value="Salesforce"> Salesforce
+      <input type="checkbox" name="skills" value="Others"> Others<br><br>
+    </fieldset><br>
+    <fieldset>
+      <legend style="color:brown">Certifications</legend>
+
+      <input type="text" name="certification1" placeholder="Certification 1"><br><br>
+      <input type="text" name="certification2" placeholder="Certification 2"><br><br>
+      <input type="text" name="certification3" placeholder="Certification 3"><br><br>
+    </fieldset><br>
+    <fieldset>
+      <legend style="color:brown">Experience</legend>
+
+      <label for="experience">Mention your work or internship experience:</label><br>
+      <textarea id="experience" name="experience" rows="4" cols="40" placeholder="e.g., Internship at XYZ Company..."></textarea><br><br>
+    </fieldset><br>
+    <fieldset>
+      <legend style="color:brown">Portfolio / Web Presence</legend>
+
+      <label for="website">Personal Website / LinkedIn / Portfolio:</label><br>
+      <input type="url" id="website" name="website" placeholder="https://yourportfolio.com , https://www.linkedin.com/in/"><br><br>
+    </fieldset><br>
+    <fieldset>
+      <legend style="color:brown">Uploads</legend>
+
+      <label for="resume">Upload Resume (PDF/DOC):</label><br>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+
+      <label for="picture">Upload Profile Picture (JPEG/PNG):</label><br>
+      <input type="file" id="picture" name="picture" accept="image/*" required><br><br>
+    </fieldset><br>
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
